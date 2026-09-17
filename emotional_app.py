@@ -2,18 +2,18 @@ import streamlit as st
 import joblib
 
 # Load model
-model = joblib.load(
-    r"C:\Users\shail\Downloads\emotion_model.pkl"
-)
+model = joblib.load("emotion_model.pkl")
+    
+
 
 # Load TF-IDF vectorizer
 vectorizer = joblib.load(
-    r"C:\Users\shail\Downloads\tfidf_vectorizer.pkl"
+    "tfidf_vectorizer.pkl"
 )
 
 # Load emotion mapping
 emotion_numbers = joblib.load(
-    r"C:\Users\shail\Downloads\emotion_mapping.pkl"
+   "emotion_mapping.pkl"
 )
 
 # Reverse the mapping
